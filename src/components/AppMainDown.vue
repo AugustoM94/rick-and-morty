@@ -1,19 +1,19 @@
 <template>
     <div class=" container py-5">
-            <ul class="d-flex justify-content-space-around align-items-centers">
-                <li><img src="/public/vue-dc-comics-1/img/buy-comics-digital-comics.png" alt="">     
+            <ul class="d-flex justify-content-around align-items-centers">
+                <li><img src="/vue-dc-comics-1/img/buy-comics-digital-comics.png" alt="">     
                     <span class="px-1">Digital comics</span>
             </li>
-                <li><img src="/public/vue-dc-comics-1/img/buy-comics-merchandise.png" alt="">    
+                <li><img src="/vue-dc-comics-1/img/buy-comics-merchandise.png" alt="">    
                     <span class="px-1">Dc Merchandise</span>
             </li>
-                <li><img src="/public/vue-dc-comics-1/img/buy-comics-subscriptions.png" alt="">    
+                <li><img src="/vue-dc-comics-1/img/buy-comics-subscriptions.png" alt="">    
                     <span class="px-1">Subscription</span></li>
                 
-                <li><img src="/public/vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="">    
+                <li><img src="/vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="">    
                     <span class="px-1">Comic shop locator</span>
             </li>
-                <li><img src="/public/vue-dc-comics-1/img/buy-dc-power-visa.svg" alt="">    
+                <li><img src="/vue-dc-comics-1/img/buy-dc-power-visa.svg" alt="">    
                     <span class="px-1">Dc power visa</span>
             </li>
             </ul>

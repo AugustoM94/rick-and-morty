@@ -2,7 +2,7 @@
  <header class="bg-white p-3">
     <div class=" row d-flex justify-content-space-around align-items-center ">
         <div class="col-4">
-            <img src="/public/vue-dc-comics-1/img/dc-logo.png" alt="logo-dc">
+            <img src="/vue-dc-comics-1/img/dc-logo.png" alt="logo-dc">
         </div>
         <div class="col-8">
             <ul class="d-flex ">
