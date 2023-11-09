@@ -39,4 +39,5 @@ span {
     text-transform: uppercase;
     font-size: 0.7rem;
 }
+
 </style>
