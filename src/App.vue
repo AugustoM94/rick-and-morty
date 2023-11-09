@@ -1,7 +1,9 @@
 <template>
+  <header class="bg-white">
   <div class="container">
-   <HeaderApp />
+     <HeaderApp />
   </div>
+</header>
 </template>
 
 <script>
