@@ -1,6 +1,6 @@
 <template >
- <header class="bg-white p-3 mt-4">
-    <div class=" row d-flex justify-content-between align-items-center ">
+ <header class="bg-white p-3">
+    <div class=" row d-flex justify-content-space-around align-items-center ">
         <div class="col-4">
             <img src="/public/vue-dc-comics-1/img/dc-logo.png" alt="logo-dc">
         </div>
@@ -60,9 +60,10 @@ li {
 a {
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: 500;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 img {
