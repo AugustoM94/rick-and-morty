@@ -1,6 +1,6 @@
 <template >
  <header class="bg-white p-3 mt-4">
-    <div class=" row d-flex justify-content-between align-items-center text-center">
+    <div class=" row d-flex justify-content-between align-items-center ">
         <div class="col-4">
             <img src="/public/vue-dc-comics-1/img/dc-logo.png" alt="logo-dc">
         </div>
