@@ -5,8 +5,8 @@
             <img src="/vue-dc-comics-1/img/dc-logo.png" alt="logo-dc">
         </div>
         <div class="col-8">
-            <ul class="d-flex ">
-                <li class="px-3" v-for="(link, index) in links" :key="index"><a href="#">{{ link.text }}</a></li>
+            <ul class="d-flex margin-check">
+                <li class="px-3 " v-for="(link, index) in links" :key="index"><a href="#">{{ link.text }}</a></li>
             </ul>
         </div>
     </div>
