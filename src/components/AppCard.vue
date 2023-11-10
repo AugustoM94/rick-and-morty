@@ -2,7 +2,7 @@
     
         <div class="col-12 col-md-3 col-lg-2">
             <div class="card-container">
-            <div class="card g-2" style="width: 13rem;">
+            <div class="card h-100 g-2" style="width: 13rem;">
                   <img :src="image" class="card-img-top" :alt="series">
                 <div class="card-body flex-grow-1 ">
                     <h5 class="card-title">{{ series }}</h5>
