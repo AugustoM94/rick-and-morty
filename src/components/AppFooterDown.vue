@@ -1,6 +1,6 @@
 <template>
     <div class="bg-footer-down mb-5 position">
-        <div class="container p-4 justify-content-space-around ">
+        <div class="container  justify-content-space-around ">
        <div class="row">
          <div class="col-6 d-flex align-items-center">
               <button class="mt-2" type="button">Sign-up Now!</button>
@@ -51,7 +51,7 @@ h5 {
 }
 .position{
     position: relative;
-    bottom: 110px;
     padding-bottom: 10px;
+    
 }
 </style>

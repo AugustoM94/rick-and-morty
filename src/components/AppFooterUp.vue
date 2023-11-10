@@ -67,6 +67,7 @@ export default {
 <style lang="css" scoped>
 .bg-img {
   background-image: url(./vue-dc-comics-1/img/footer-bg.jpg);
+  background-size: contain;
 }
 h5 {
     color: white;
@@ -84,7 +85,8 @@ li{
 
 }
 img {
-    width: 400px;
+    width: 370px;
+    position: absolute;
 }
 .position{
     position: relative;

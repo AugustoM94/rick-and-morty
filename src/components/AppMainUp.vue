@@ -10,8 +10,7 @@
 
 
 <script>
-import AppCard from "/Esercizi-Boolean/vite-comics/src/components/AppCard.vue";
-
+import AppCard from "./AppCard.vue";
     export default {
         components:{
              AppCard,
