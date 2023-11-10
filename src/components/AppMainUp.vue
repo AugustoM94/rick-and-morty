@@ -1,11 +1,21 @@
 <template>
-    <div class="p-4 mt-1">
-       <h4>--&gt; Content goes here &lt;--</h4>
+    <div class="container p-3 mt-3 flex-wrap ">
+        <div class="row">
+             <AppCard v-for="slide in slides" :image="slide.thumb" :price="slide.price" :series="slide.series" :type="slide.type"
+                />  
+        </div>      
     </div>
 </template>
 
+
+
 <script>
+import AppCard from "/Esercizi-Boolean/vite-comics/src/components/AppCard.vue";
+
     export default {
+        components:{
+             AppCard,
+        },
         data(){
             return{
                 slides:[
