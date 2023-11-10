@@ -3,6 +3,7 @@
   <div class="container">
      <HeaderApp />
   </div>
+  <HeaderDownApp/>
 </header>
    <div class="container">
         <AppMainUp />
@@ -22,6 +23,7 @@ import AppMainUp from "./components/AppMainUp.vue";
 import AppMainDown from "./components/AppMainDown.vue";
 import AppFooterUp from "./components/AppFooterUp.vue";
 import AppFooterDown from "./components/AppFooterDown.vue";
+import HeaderDownApp from "./components/HeaderDownApp.vue";
 
 
 
@@ -32,7 +34,8 @@ import AppFooterDown from "./components/AppFooterDown.vue";
       AppMainUp,
       AppMainDown,
       AppFooterUp,
-      AppFooterDown
+      AppFooterDown,
+      HeaderDownApp
     }
   }
 </script>
