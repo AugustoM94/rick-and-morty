@@ -1,5 +1,5 @@
 <template>
-<img src="/public/vue-dc-comics-1/img/jumbotron.jpg" alt="jumbo-image">
+     <img src="/public/vue-dc-comics-1/img/jumbotron.jpg" alt="jumbo-image">
 </template>
 
 <script>

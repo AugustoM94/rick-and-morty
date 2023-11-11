@@ -1,10 +1,15 @@
 <template>
+    <span>Current series</span>
     <div class="container p-3 mt-3 flex-wrap ">
         <div class="row">
              <AppCard v-for="slide in slides" :image="slide.thumb" :price="slide.price" :series="slide.series" :type="slide.type"
                 />  
-        </div>      
+        </div>  
     </div>
+    <div class="d-flex justify-content-center align-items-center ">
+            <button >load more</button>    
+
+      </div>
 </template>
 
 
@@ -98,6 +103,24 @@ import AppCard from "./AppCard.vue";
 
 <style lang="css" scoped>
 h4 {
-    color: white;
+        color: white;
 }
+button {
+        background-color:  #0282f9;
+        color: white;
+        width:200px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    span{
+        background-color:  #0282f9;
+        color: white;
+        width:200px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        padding: 15px;
+        margin-left: 20px;
+        position: relative;
+        bottom: 15px;
+    }
 </style>
