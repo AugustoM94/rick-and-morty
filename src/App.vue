@@ -1,7 +1,9 @@
 <template>
   <HeaderComponent/>
   <main class="container">
-
+    <div class="d-flex justify-content-center align-items-center container">
+        <h2 class="display-1 fw-bold">Loading...</h2>
+    </div>
     <CharacterListComponent />
 
   </main>
@@ -20,22 +22,23 @@ import CharacterListComponent from './components/CharacterListComponent.vue';
       CharacterListComponent
     },
     data(){
-      return{
+      return{ 
         store,
         loading:true
       }
     },
     methods:{
-      getCharacters(){
-        axios.get(store.apiUrl+store.endPoint.character).then((response) =>{
-          store.characterList = response.data.results;
-        }).catch((error)=>{
-          console.log(error);
-        }).finally(()=>{
-          this.loading= false;
-        })
-      }
+      getCharacters() {
+      const url = store.apiUrl + store.endPoint.character
+      axios.get(url).then((response) => {
+        store.characterList = response.data.results
+      }).catch((error) => {
+        console.log(error)
+      }).finally(() => {
+        this.loading = false
+      })
     },
+  },
     created(){
       this.getCharacters();
     }
