@@ -1,45 +1,47 @@
 <template>
-  <header class="bg-white">
-  <div class="container">
-     <HeaderApp />
-  </div>
-  <HeaderDownApp/>
-</header>
-   <div class="container">
-        <AppMainUp />
-   </div>
-   <div class="bg-main-down">
-    <AppMainDown/>
-   </div>
-<footer>
-    <AppFooterUp/>
-    <AppFooterDown/>
-</footer>
+  <HeaderComponent/>
+  <main class="container">
+
+    <CharacterListComponent />
+
+  </main>
 </template>
 
 <script>
-import HeaderApp from "./components/HeaderApp.vue";
-import AppMainUp from "./components/AppMainUp.vue";
-import AppMainDown from "./components/AppMainDown.vue";
-import AppFooterUp from "./components/AppFooterUp.vue";
-import AppFooterDown from "./components/AppFooterDown.vue";
-import HeaderDownApp from "./components/HeaderDownApp.vue";
 
-
-
-
+import HeaderComponent from './components/HeaderComponent.vue';
+import axios from 'axios';
+import { store } from './data/store';
+import CharacterListComponent from './components/CharacterListComponent.vue';
   export default {
-    components: {
-      HeaderApp,
-      AppMainUp,
-      AppMainDown,
-      AppFooterUp,
-      AppFooterDown,
-      HeaderDownApp
+    name: 'App',
+    components:{
+      HeaderComponent,
+      CharacterListComponent
+    },
+    data(){
+      return{
+        store,
+        loading:true
+      }
+    },
+    methods:{
+      getCharacters(){
+        axios.get(store.apiUrl+store.endPoint.character).then((response) =>{
+          store.characterList = response.data.results;
+        }).catch((error)=>{
+          console.log(error);
+        }).finally(()=>{
+          this.loading= false;
+        })
+      }
+    },
+    created(){
+      this.getCharacters();
     }
   }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
 
 </style>
